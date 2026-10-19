@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hold the Line Sandbagging handouts</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Public+Sans:wght@400;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+@page { size: letter; margin: 0; }
+* { box-sizing: border-box; }
+:root { --ink: #0f2a30; --sand: #d6a65e; --water: #1f6f7d; --muted: #4c5f62;
+  --display: "Big Shoulders Display", "Arial Narrow", Impact, sans-serif; --body: "Public Sans", Arial, sans-serif; --mono: "IBM Plex Mono", Menlo, monospace; }
+html, body { margin: 0; background: #fff; color: var(--ink); font-family: var(--body); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.sheet { width: 8.5in; height: 11in; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; position: relative; }
+.sheet::before, .sheet::after { content: ""; position: absolute; border: 0 dashed #9aa8a9; }
+.sheet::before { left: 50%; top: 0; bottom: 0; border-left-width: 1px; }
+.sheet::after { top: 50%; left: 0; right: 0; border-top-width: 1px; }
+.card { padding: 0.32in 0.34in 0.3in; display: grid; grid-template-rows: auto auto auto auto 1fr auto; gap: 0.1in; overflow: hidden; }
+.brand { font: 900 15pt/1 var(--display); text-transform: uppercase; letter-spacing: 0.02em; border-bottom: 3px solid var(--ink); padding-bottom: 6px; }
+.brand span { color: var(--water); }
+.kicker { font: 500 7pt/1.2 var(--mono); letter-spacing: 0.12em; text-transform: uppercase; color: var(--water); }
+h2 { margin: 0; font: 900 25pt/0.9 var(--display); text-transform: uppercase; }
+.deal { display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: center; border: 2px dashed var(--ink); border-radius: 6px; padding: 7px 10px; background: #f6ecdc; }
+.deal b { font: 900 30pt/0.85 var(--display); }
+.deal p { margin: 0; font-size: 8.5pt; line-height: 1.25; }
+.deal strong { display: block; font: 900 11pt/1 var(--display); text-transform: uppercase; letter-spacing: 0.03em; }
+ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 3px; font-size: 8.8pt; line-height: 1.25; align-content: start; }
+ul li { padding-left: 12px; position: relative; }
+ul li::before { content: ""; position: absolute; left: 0; top: 4px; width: 7px; height: 7px; background: var(--sand); border-radius: 1px; }
+.foot { display: grid; grid-template-columns: 1fr auto; gap: 10px; align-items: end; border-top: 1px solid #c9d2d1; padding-top: 8px; }
+.foot small { font: 500 7pt/1 var(--mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.num { font: 900 25pt/0.95 var(--display); margin-top: 3px; }
+.foot p { margin: 3px 0 0; font-size: 7.5pt; color: var(--muted); }
+.pic { min-height: 0; border-radius: 4px; background: url(../photos/garage-door-wall.jpg) center 75% / cover; }
+.qr img { width: 0.85in; height: 0.85in; display: block; }
+.qr span { display: block; margin-top: 3px; font: 500 6pt/1 var(--mono); text-transform: uppercase; text-align: center; }
+</style>
+</head>
+<body>
+<div class="sheet">
+<!-- CARD -->
+  <div class="card">
+    <div class="brand">Hold the Line <span>Sandbagging</span></div>
+    <div class="kicker">Sandbag placement · Larkspur, CA</div>
+    <h2>El Niño is coming. Protect your garage.</h2>
+    <ul>
+      <li>Sandbag walls at garage doors, doorways and gates</li>
+      <li>Plastic sheeting under every wall</li>
+      <li>Set up before storms, picked up after the season</li>
+      <li>Local public-school kids. We bring everything.</li>
+    </ul>
+    <div class="pic" role="img" aria-label="Sandbag wall across a garage door"></div>
+    <div>
+      <div class="deal"><b>15%</b><p><strong>El Niño Community Discount</strong>Off every quote this season</p></div>
+      <div class="foot" style="margin-top:8px">
+        <div><small>Free quote · Call or text</small><div class="num">415-895-8570</div><p>Text us a photo, get a price back.</p></div>
+        <div class="qr"><img src="qr-text-us.svg" alt="QR code to text 415-895-8570"><span>Scan to text</span></div>
+      </div>
+    </div>
+  </div>
+<!-- /CARD -->
+</div>
+<script>
+  // repeat the card so all four quarters match
+  var sheet = document.querySelector('.sheet'), card = sheet.querySelector('.card');
+  for (var i = 0; i < 3; i++) sheet.appendChild(card.cloneNode(true));
+</script>
+</body>
+</html>
