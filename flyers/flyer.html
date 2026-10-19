@@ -17,9 +17,9 @@ html, body { margin: 0; background: var(--paper); color: var(--ink); font-family
 .kicker { font: 500 9pt/1.2 var(--mono); letter-spacing: 0.14em; text-transform: uppercase; color: var(--sand); }
 h1 { margin: 0.12in 0 0; font: 900 48pt/0.9 var(--display); text-transform: uppercase; }
 h1 em { font-style: normal; color: var(--sand); }
-.photo { height: 2.3in; background: url(../photos/garage-door-wall.jpg) center 72% / cover; position: relative; }
-.stamp { position: absolute; right: 0.45in; top: -0.55in; width: 1.75in; height: 1.75in; border-radius: 50%; background: var(--sand); color: var(--ink); display: grid; place-content: center; text-align: center; transform: rotate(-8deg); border: 3px dashed var(--ink); outline: 6px solid var(--sand); }
-.stamp b { display: block; font: 900 44pt/0.8 var(--display); }
+.photo { height: 2.3in; background: url(../photos/garage-door-wall.jpg) center 38% / cover; position: relative; }
+.stamp { position: absolute; right: 0.3in; top: -1.15in; width: 1.55in; height: 1.55in; border-radius: 50%; background: var(--sand); color: var(--ink); display: grid; place-content: center; text-align: center; transform: rotate(-8deg); border: 3px dashed var(--ink); outline: 6px solid var(--sand); }
+.stamp b { display: block; font: 900 38pt/0.8 var(--display); }
 .stamp span { display: block; font: 900 13pt/1 var(--display); text-transform: uppercase; letter-spacing: 0.08em; }
 .stamp small { display: block; margin-top: 4px; font: 500 6.5pt/1.2 var(--mono); text-transform: uppercase; letter-spacing: 0.06em; }
 .body { padding: 0.24in 0.5in 0.14in; display: grid; gap: 0.16in; align-content: start; }
@@ -33,6 +33,9 @@ h2 { margin: 0 0 0.08in; font: 900 17pt/1 var(--display); text-transform: upperc
 ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 5px; font-size: 10.5pt; line-height: 1.3; }
 ul li { padding-left: 16px; position: relative; }
 ul li::before { content: ""; position: absolute; left: 0; top: 5px; width: 9px; height: 9px; background: var(--sand); border-radius: 2px; }
+.kids { float: right; width: 1.2in; height: 1.2in; margin: 0 0 6px 10px; shape-outside: circle(50%); border-radius: 50%; background: var(--ink); color: #eef4f3; display: grid; place-content: center; text-align: center; transform: rotate(6deg); border: 2px dashed var(--sand); outline: 4px solid var(--ink); }
+.kids small { display: block; font: 500 6pt/1.2 var(--mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--sand); }
+.kids b { display: block; font: 900 15pt/0.9 var(--display); text-transform: uppercase; margin: 3px 0; }
 .about p { margin: 0; font-size: 10.5pt; line-height: 1.4; }
 .about p + p { margin-top: 6px; }
 .bottom { background: var(--sand); padding: 0.26in 0.5in 0.3in; display: grid; grid-template-columns: 1fr auto; gap: 0.3in; align-items: center; }
@@ -78,6 +81,7 @@ ul li::before { content: ""; position: absolute; left: 0; top: 5px; width: 9px; 
       </div>
       <div class="about">
         <h2>Local kids, local help</h2>
+        <div class="kids" aria-label="Run by local kids, Larkspur public school students"><small>Run by</small><b>Local<br>Kids</b><small>Public school<br>students</small></div>
         <p>We're students at the public schools right here. When the creek floods, it's our neighbors, teachers and friends' families who get hit.</p>
         <p>We stack every wall like it's protecting our own house. Free quotes, and 15% off all season.</p>
       </div>

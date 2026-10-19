@@ -30,7 +30,11 @@ ul li::before { content: ""; position: absolute; left: 0; top: 4px; width: 7px; 
 .foot small { font: 500 7pt/1 var(--mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
 .num { font: 900 25pt/0.95 var(--display); margin-top: 3px; }
 .foot p { margin: 3px 0 0; font-size: 7.5pt; color: var(--muted); }
-.pic { min-height: 0; border-radius: 4px; background: url(../photos/garage-door-wall.jpg) center 30% / cover; }
+.pic { min-height: 0; border-radius: 4px; background: url(../photos/garage-door-wall.jpg) center 38% / cover; }
+.row { display: grid; grid-template-columns: 1fr auto; gap: 10px; align-items: center; }
+.kids { width: 0.95in; height: 0.95in; border-radius: 50%; background: var(--ink); color: #eef4f3; display: grid; place-content: center; text-align: center; transform: rotate(6deg); border: 2px dashed var(--sand); outline: 3px solid var(--ink); }
+.kids small { display: block; font: 500 5pt/1.2 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--sand); }
+.kids b { display: block; font: 900 12pt/0.9 var(--display); text-transform: uppercase; margin: 2px 0; }
 .qr img { width: 0.85in; height: 0.85in; display: block; }
 .qr span { display: block; margin-top: 3px; font: 500 6pt/1 var(--mono); text-transform: uppercase; text-align: center; }
 </style>
@@ -42,12 +46,15 @@ ul li::before { content: ""; position: absolute; left: 0; top: 4px; width: 7px; 
     <div class="brand">Hold the Line <span>Sandbagging</span></div>
     <div class="kicker">Sandbag placement · Larkspur, CA</div>
     <h2>El Niño is coming. Protect your garage.</h2>
+    <div class="row">
     <ul>
       <li>Sandbag walls at garage doors, doorways and gates</li>
       <li>Plastic sheeting under every wall</li>
       <li>Set up before storms, picked up after the season</li>
-      <li>Local public-school kids. We bring everything.</li>
+      <li>We bring all the bags and sand</li>
     </ul>
+    <div class="kids" aria-label="Run by local kids, public school students"><small>Run by</small><b>Local<br>Kids</b><small>Public school<br>students</small></div>
+    </div>
     <div class="pic" role="img" aria-label="Sandbag wall across a garage door"></div>
     <div>
       <div class="deal"><b>15%</b><p><strong>El Niño Community Discount</strong>Off every quote this season</p></div>
